@@ -1,0 +1,37 @@
+
+<ion-app>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+       IMC - APP
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+
+    <ion-item-divider color="light">
+      Informe seu peso e altura:
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label color="primary" floating>Altura:</ion-label>
+      <ion-input [(ngModel)]="altura"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="secondary" floating>Peso:</ion-label>
+      <ion-input [(ngModel)]="peso"></ion-input>
+    </ion-item>
+
+    <button ion-button (click)="calculoImc()">Calcular</button>
+      
+    <ion-item>Resultado:</ion-item>
+        <ion-item>{{resultado}}</ion-item>
+        <ion-item>{{calculo}}</ion-item>
+
+    
+
+  </ion-content>
+</ion-app>
